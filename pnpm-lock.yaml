@@ -27,8 +27,8 @@ importers:
         specifier: ^5.7.2
         version: 5.7.2
       ultracite:
-        specifier: ^4.1.7
-        version: 4.1.7
+        specifier: ^4.1.8
+        version: 4.1.8
 
   apps/api:
     dependencies:
@@ -9409,8 +9409,8 @@ packages:
     resolution: {integrity: sha512-VAH4IvQ7BDFYglMd7BPRDfLgxZZX4O4TFcRDA6EN5X7erNJJq+McIEp8np9aVtxrCJ6qx4GTYVfOWNjcqwZgRw==}
     engines: {node: '>=8'}
 
-  ultracite@4.1.7:
-    resolution: {integrity: sha512-LqUj6o3GVpFXtkr6R1xoBfWuN2E7xl+nZ38C64EY9HeKDbffi57bpk81atnB5xHST0Ryb3F0/hUlFaoDEU84Yg==}
+  ultracite@4.1.8:
+    resolution: {integrity: sha512-oDB80YZ6aXGEuHtEHuOjOMhbyU/hxGvfWdO+rs5Tlq2C2sB1WGVtHXsX7t934ukcH3v7aCBOo4HVHx27JaBsKw==}
     hasBin: true
 
   unbox-primitive@1.0.2:
@@ -19745,7 +19745,7 @@ snapshots:
 
   typical@4.0.0: {}
 
-  ultracite@4.1.7: {}
+  ultracite@4.1.8: {}
 
   unbox-primitive@1.0.2:
     dependencies:
