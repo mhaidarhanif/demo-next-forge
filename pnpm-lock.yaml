@@ -253,8 +253,8 @@ importers:
         specifier: ^8.4.5
         version: 8.4.5(@types/react@18.3.12)(storybook@8.4.5(bufferutil@4.0.8))
       '@storybook/addon-interactions':
-        specifier: ^8.4.5
-        version: 8.4.5(storybook@8.4.5(bufferutil@4.0.8))
+        specifier: ^8.4.7
+        version: 8.4.7(storybook@8.4.5(bufferutil@4.0.8))
       '@storybook/addon-onboarding':
         specifier: ^8.4.6
         version: 8.4.6(react@18.3.1)(storybook@8.4.5(bufferutil@4.0.8))
@@ -4215,10 +4215,10 @@ packages:
     peerDependencies:
       storybook: ^8.4.5
 
-  '@storybook/addon-interactions@8.4.5':
-    resolution: {integrity: sha512-s6R8XVD8LTp+LQTDbhtDjDLE6S44I7FtMLxPdMNwN9VEJjBk01NONLDuGDpNq5o/0bnybA3rMHk9+3afsgzidQ==}
+  '@storybook/addon-interactions@8.4.7':
+    resolution: {integrity: sha512-fnufT3ym8ht3HHUIRVXAH47iOJW/QOb0VSM+j269gDuvyDcY03D1civCu1v+eZLGaXPKJ8vtjr0L8zKQ/4P0JQ==}
     peerDependencies:
-      storybook: ^8.4.5
+      storybook: ^8.4.7
 
   '@storybook/addon-measure@8.4.5':
     resolution: {integrity: sha512-+sNjew991YaoXQyWWloFybjEGrDO40Jk6w8BgZs2X7oc3D5t/6oFzvyC862U++LGqKFA3quXDeBjEb92CI9cRA==}
@@ -4311,6 +4311,11 @@ packages:
     resolution: {integrity: sha512-8qM35FkueuRpJr0zA6ENvhQICbo+iKL1ln450DwV1kKJtc41KdbA3CuCvtZ/FnoPsFnwdtPjhhICFtRt8LRTSg==}
     peerDependencies:
       storybook: ^8.4.5
+
+  '@storybook/instrumenter@8.4.7':
+    resolution: {integrity: sha512-k6NSD3jaRCCHAFtqXZ7tw8jAzD/yTEWXGya+REgZqq5RCkmJ+9S4Ytp/6OhQMPtPFX23gAuJJzTQVLcCr+gjRg==}
+    peerDependencies:
+      storybook: ^8.4.7
 
   '@storybook/manager-api@8.4.5':
     resolution: {integrity: sha512-t39JaMy3UX4StbUH/tIDcaflBDxTcyIq853wQtBMhVL3e1+Dw3MIiiG/5bw79HU4R7kSmPVLXIIbV3FmXkq7KQ==}
@@ -4414,6 +4419,11 @@ packages:
     resolution: {integrity: sha512-mHsRc6m60nfcEBsjvUkKz+Jnz0or4WH5jmJ1VL2pGKO4VzESCPqAwDnwDqP2YyeSQ0b/MAKUT5kdoLE2RE2eVw==}
     peerDependencies:
       storybook: ^8.4.5
+
+  '@storybook/test@8.4.7':
+    resolution: {integrity: sha512-AhvJsu5zl3uG40itSQVuSy5WByp3UVhS6xAnme4FWRwgSxhvZjATJ3AZkkHWOYjnnk+P2/sbz/XuPli1FVCWoQ==}
+    peerDependencies:
+      storybook: ^8.4.7
 
   '@storybook/theming@8.4.5':
     resolution: {integrity: sha512-45e/jeG4iuqdZcHg3PbB6dwXQTwlnnEB7r/QcVExyC7ibrkTnjUfvxzyUw4mmU3CXETFGD5EcUobFkgK+/aPxQ==}
@@ -13526,11 +13536,11 @@ snapshots:
       '@storybook/global': 5.0.0
       storybook: 8.4.5(bufferutil@4.0.8)
 
-  '@storybook/addon-interactions@8.4.5(storybook@8.4.5(bufferutil@4.0.8))':
+  '@storybook/addon-interactions@8.4.7(storybook@8.4.5(bufferutil@4.0.8))':
     dependencies:
       '@storybook/global': 5.0.0
-      '@storybook/instrumenter': 8.4.5(storybook@8.4.5(bufferutil@4.0.8))
-      '@storybook/test': 8.4.5(storybook@8.4.5(bufferutil@4.0.8))
+      '@storybook/instrumenter': 8.4.7(storybook@8.4.5(bufferutil@4.0.8))
+      '@storybook/test': 8.4.7(storybook@8.4.5(bufferutil@4.0.8))
       polished: 4.3.1
       storybook: 8.4.5(bufferutil@4.0.8)
       ts-dedent: 2.2.0
@@ -13659,6 +13669,12 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
 
   '@storybook/instrumenter@8.4.5(storybook@8.4.5(bufferutil@4.0.8))':
+    dependencies:
+      '@storybook/global': 5.0.0
+      '@vitest/utils': 2.1.5
+      storybook: 8.4.5(bufferutil@4.0.8)
+
+  '@storybook/instrumenter@8.4.7(storybook@8.4.5(bufferutil@4.0.8))':
     dependencies:
       '@storybook/global': 5.0.0
       '@vitest/utils': 2.1.5
@@ -13835,6 +13851,18 @@ snapshots:
       '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0
       '@storybook/instrumenter': 8.4.5(storybook@8.4.5(bufferutil@4.0.8))
+      '@testing-library/dom': 10.4.0
+      '@testing-library/jest-dom': 6.5.0
+      '@testing-library/user-event': 14.5.2(@testing-library/dom@10.4.0)
+      '@vitest/expect': 2.0.5
+      '@vitest/spy': 2.0.5
+      storybook: 8.4.5(bufferutil@4.0.8)
+
+  '@storybook/test@8.4.7(storybook@8.4.5(bufferutil@4.0.8))':
+    dependencies:
+      '@storybook/csf': 0.1.11
+      '@storybook/global': 5.0.0
+      '@storybook/instrumenter': 8.4.7(storybook@8.4.5(bufferutil@4.0.8))
       '@testing-library/dom': 10.4.0
       '@testing-library/jest-dom': 6.5.0
       '@testing-library/user-event': 14.5.2(@testing-library/dom@10.4.0)
