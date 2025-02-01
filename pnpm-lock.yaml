@@ -373,8 +373,8 @@ importers:
         specifier: ^0.33.5
         version: 0.33.5
       shiki:
-        specifier: ^1.23.1
-        version: 1.23.1
+        specifier: ^2.2.0
+        version: 2.2.0
       sqip:
         specifier: 1.0.0-alpha.51
         version: 1.0.0-alpha.51(sqip-plugin-blur@1.0.0-alpha.22)(sqip-plugin-data-uri@1.0.0-alpha.52)(sqip-plugin-primitive@1.0.0-alpha.53)(sqip-plugin-svgo@1.0.0-alpha.54)
@@ -417,13 +417,13 @@ importers:
     dependencies:
       '@ai-sdk/openai':
         specifier: ^1.0.4
-        version: 1.0.4(zod@3.23.8)
+        version: 1.0.4(zod@3.24.1)
       '@repo/env':
         specifier: workspace:*
         version: link:../env
       ai:
         specifier: ^4.0.9
-        version: 4.0.9(react@18.3.1)(zod@3.23.8)
+        version: 4.0.9(react@18.3.1)(zod@3.24.1)
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
@@ -914,7 +914,7 @@ importers:
         version: link:../env
       '@stripe/agent-toolkit':
         specifier: ^0.1.21
-        version: 0.1.21(@langchain/core@0.3.18)(ai@4.0.9(react@18.3.1)(zod@3.23.8))
+        version: 0.1.21(@langchain/core@0.3.18)(ai@4.0.9(react@18.3.1)(zod@3.24.1))
       stripe:
         specifier: ^17.4.0
         version: 17.4.0
@@ -1376,6 +1376,11 @@ packages:
 
   '@babel/parser@7.26.2':
     resolution: {integrity: sha512-DWMCZH9WA4Maitz2q21SRKHo9QXZxkDsbNZoVD62gusNtNBBqDg9i7uOhASfTfIGNzW+O+r7+jAlM8dwphcJKQ==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  '@babel/parser@7.26.7':
+    resolution: {integrity: sha512-kEvgGGgEjRUutvdVvZhbn/BxVt+5VSpwXz1j3WYXQbXDo8KzFOPNG2GQbdAiNq8g6wn1yKk7C/qrke03a84V+w==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -1852,6 +1857,10 @@ packages:
 
   '@babel/types@7.26.0':
     resolution: {integrity: sha512-Z/yiTPj+lDVnF7lWeKCIJzaIkI0vYO87dMpZ4bg4TDrFe4XXLFWL1TbXU27gBP3QccxV9mZICCrnjnYlJjXHOA==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/types@7.26.7':
+    resolution: {integrity: sha512-t8kDRGrKXyp6+tjUh7hw2RLyclsW4TRoRvRHtSyAX9Bb5ldlFh+90YAYY6awRXrlB4G5G2izNeGySpATlFzmOg==}
     engines: {node: '>=6.9.0'}
 
   '@behold/sharp-vibrant@0.2.1':
@@ -4149,35 +4158,62 @@ packages:
     peerDependencies:
       webpack: '>=4.40.0'
 
-  '@shikijs/core@1.23.1':
-    resolution: {integrity: sha512-NuOVgwcHgVC6jBVH5V7iblziw6iQbWWHrj5IlZI3Fqu2yx9awH7OIQkXIcsHsUmY19ckwSgUMgrqExEyP5A0TA==}
-
   '@shikijs/core@1.24.0':
     resolution: {integrity: sha512-6pvdH0KoahMzr6689yh0QJ3rCgF4j1XsXRHNEeEN6M4xJTfQ6QPWrmHzIddotg+xPJUPEPzYzYCKzpYyhTI6Gw==}
 
-  '@shikijs/engine-javascript@1.23.1':
-    resolution: {integrity: sha512-i/LdEwT5k3FVu07SiApRFwRcSJs5QM9+tod5vYCPig1Ywi8GR30zcujbxGQFJHwYD7A5BUqagi8o5KS+LEVgBg==}
+  '@shikijs/core@1.29.2':
+    resolution: {integrity: sha512-vju0lY9r27jJfOY4Z7+Rt/nIOjzJpZ3y+nYpqtUZInVoXQ/TJZcfGnNOGnKjFdVZb8qexiCuSlZRKcGfhhTTZQ==}
+
+  '@shikijs/core@2.2.0':
+    resolution: {integrity: sha512-U+vpKdsQDWuX3fPTCkSc8XPX9dCaS+r+qEP1XhnU30yxRFo2OxHJmY2H5rO1q+v0zB5R2vobsxEFt5uPf31CGQ==}
 
   '@shikijs/engine-javascript@1.24.0':
     resolution: {integrity: sha512-ZA6sCeSsF3Mnlxxr+4wGEJ9Tto4RHmfIS7ox8KIAbH0MTVUkw3roHPHZN+LlJMOHJJOVupe6tvuAzRpN8qK1vA==}
 
-  '@shikijs/engine-oniguruma@1.23.1':
-    resolution: {integrity: sha512-KQ+lgeJJ5m2ISbUZudLR1qHeH3MnSs2mjFg7bnencgs5jDVPeJ2NVDJ3N5ZHbcTsOIh0qIueyAJnwg7lg7kwXQ==}
+  '@shikijs/engine-javascript@1.29.2':
+    resolution: {integrity: sha512-iNEZv4IrLYPv64Q6k7EPpOCE/nuvGiKl7zxdq0WFuRPF5PAE9PRo2JGq/d8crLusM59BRemJ4eOqrFrC4wiQ+A==}
+
+  '@shikijs/engine-javascript@2.2.0':
+    resolution: {integrity: sha512-96SpZ4V3UVMtpSPR5QpmU395CNrQiRPszXK62m8gKR2HMA0653ruce7omS5eX6EyAyFSYHvBWtTuspiIsHpu4A==}
 
   '@shikijs/engine-oniguruma@1.24.0':
     resolution: {integrity: sha512-Eua0qNOL73Y82lGA4GF5P+G2+VXX9XnuUxkiUuwcxQPH4wom+tE39kZpBFXfUuwNYxHSkrSxpB1p4kyRW0moSg==}
 
+  '@shikijs/engine-oniguruma@1.29.2':
+    resolution: {integrity: sha512-7iiOx3SG8+g1MnlzZVDYiaeHe7Ez2Kf2HrJzdmGwkRisT7r4rak0e655AcM/tF9JG/kg5fMNYlLLKglbN7gBqA==}
+
+  '@shikijs/engine-oniguruma@2.2.0':
+    resolution: {integrity: sha512-wowCKwkvPFFMXFkiKK/a2vs5uTCc0W9+O9Xcu/oqFP6VoDFe14T8u/D+Rl4dCJJSOyeynP9mxNPJ82T5JHTNCw==}
+
+  '@shikijs/langs@1.29.2':
+    resolution: {integrity: sha512-FIBA7N3LZ+223U7cJDUYd5shmciFQlYkFXlkKVaHsCPgfVLiO+e12FmQE6Tf9vuyEsFe3dIl8qGWKXgEHL9wmQ==}
+
+  '@shikijs/langs@2.2.0':
+    resolution: {integrity: sha512-RSWLH3bnoyG6O1kZ2msh5jOkKKp8eENwyT30n62vUtXfp5cxkF/bpWPpO+p4+GAPhL2foBWR2kOerwkKG0HXlQ==}
+
   '@shikijs/rehype@1.24.0':
     resolution: {integrity: sha512-ZUbSSc2/bKFqROdU7CwdeuLjtGiwRVy68G8vcHKi3feXqfv/LJCfaC20WBRvrSkw1RWJUaQX3g2ROL4ggwGrug==}
 
-  '@shikijs/types@1.23.1':
-    resolution: {integrity: sha512-98A5hGyEhzzAgQh2dAeHKrWW4HfCMeoFER2z16p5eJ+vmPeF6lZ/elEne6/UCU551F/WqkopqRsr1l2Yu6+A0g==}
+  '@shikijs/themes@1.29.2':
+    resolution: {integrity: sha512-i9TNZlsq4uoyqSbluIcZkmPL9Bfi3djVxRnofUHwvx/h6SRW3cwgBC5SML7vsDcWyukY0eCzVN980rqP6qNl9g==}
+
+  '@shikijs/themes@2.2.0':
+    resolution: {integrity: sha512-8Us9ZF2mV9kuh+4ySJ9MzrUDIpc2RIkRfKBZclkliW1z9a0PlGU2U7fCkItZZHpR5e4/ft5BzuO+GDqombC6Aw==}
 
   '@shikijs/types@1.24.0':
     resolution: {integrity: sha512-aptbEuq1Pk88DMlCe+FzXNnBZ17LCiLIGWAeCWhoFDzia5Q5Krx3DgnULLiouSdd6+LUM39XwXGppqYE0Ghtug==}
 
-  '@shikijs/vscode-textmate@9.3.0':
-    resolution: {integrity: sha512-jn7/7ky30idSkd/O5yDBfAnVt+JJpepofP/POZ1iMOxK59cOfqIgg/Dj0eFsjOTMw+4ycJN0uhZH/Eb0bs/EUA==}
+  '@shikijs/types@1.29.2':
+    resolution: {integrity: sha512-VJjK0eIijTZf0QSTODEXCqinjBn0joAHQ+aPSBzrv4O2d/QSbsMw+ZeSRx03kV34Hy7NzUvV/7NqfYGRLrASmw==}
+
+  '@shikijs/types@2.2.0':
+    resolution: {integrity: sha512-wkZZKs80NtW5Jp/7ONI1j7EdXSatX2BKMS7I01wliDa09gJKHkZyVqlEMRka/mjT5Qk9WgAyitoCKgGgbsP/9g==}
+
+  '@shikijs/vscode-textmate@10.0.1':
+    resolution: {integrity: sha512-fTIQwLF+Qhuws31iw7Ncl1R3HUDtGwIipiJ9iU+UsDUwMhegFcQKQHd51nZjb7CArq0MvON8rbgCGQYWHUKAdg==}
+
+  '@shikijs/vscode-textmate@9.3.1':
+    resolution: {integrity: sha512-79QfK1393x9Ho60QFyLti+QfdJzRQCVLFb97kOIV7Eo9vQU/roINgk7m24uv0a7AUvN//RDH36FLjjK48v0s9g==}
 
   '@socket.io/component-emitter@3.1.2':
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
@@ -4513,8 +4549,8 @@ packages:
   '@swc/helpers@0.5.5':
     resolution: {integrity: sha512-KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A==}
 
-  '@swc/types@0.1.7':
-    resolution: {integrity: sha512-scHWahbHF0eyj3JsxG9CFJgFdFNaVQCNAimBlT6PzS3n/HptxqREjsm4OH6AN3lYcffZYSPxXW8ua2BEHp0lJQ==}
+  '@swc/types@0.1.17':
+    resolution: {integrity: sha512-V5gRru+aD8YVyCOMAjMpWR1Ui577DD5KSJsHP8RAxopAH22jFz6GZd/qxqjO6MJHQhcsjvjOFXyDhyLQUnMveQ==}
 
   '@t3-oss/env-core@0.11.1':
     resolution: {integrity: sha512-MaxOwEoG1ntCFoKJsS7nqwgcxLW1SJw238AJwfJeaz3P/8GtkxXZsPPolsz1AdYvUTbe3XvqZ/VCdfjt+3zmKw==}
@@ -4791,8 +4827,8 @@ packages:
   '@types/text-table@0.2.5':
     resolution: {integrity: sha512-hcZhlNvMkQG/k1vcZ6yHOl6WAYftQ2MLfTHcYRZ2xYZFD8tGVnE3qFV0lj1smQeDSR7/yY0PyuUalauf33bJeA==}
 
-  '@types/unist@2.0.10':
-    resolution: {integrity: sha512-IfYcSBWE3hLpBg8+X2SEa8LVkJdJEkT2Ese2aaLs3ptGdVtABxndrMaxuFlQ1qdFf9Q5rDvDpxI3WwgvKFAsQA==}
+  '@types/unist@2.0.11':
+    resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -4806,8 +4842,8 @@ packages:
   '@types/ws@8.5.13':
     resolution: {integrity: sha512-osM/gWBTPKgHV8XkTunnegTRIsvF6owmf5w+JtAfOw472dptdm0dlGv4xCt6GwQRcC2XVOvvRE/0bAoQcL2QkA==}
 
-  '@ungap/structured-clone@1.2.0':
-    resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+  '@ungap/structured-clone@1.3.0':
+    resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
 
   '@vercel/analytics@1.4.1':
     resolution: {integrity: sha512-ekpL4ReX2TH3LnrRZTUKjHHNpNy9S1I7QmS+g/RQXoSUQ8ienzosuX7T9djZ/s8zPhBx1mpHP/Rw5875N+zQIQ==}
@@ -6226,16 +6262,16 @@ packages:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
     engines: {node: '>=8.0.0'}
 
-  esm-env@1.1.4:
-    resolution: {integrity: sha512-oO82nKPHKkzIj/hbtuDYy/JHqBHFlMIW36SDiPCVsj87ntDLcWN+sJ1erdVryd4NxODacFTsdrIE3b7IamqbOg==}
+  esm-env@1.2.2:
+    resolution: {integrity: sha512-Epxrv+Nr/CaL4ZcFGPJIYLWFom+YeV1DqMLHJoEd9SYRxNbaFruBwfEX/kkHUJf55j2+TUbmDcmuilbP1TmXHA==}
 
   esprima@4.0.1:
     resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
     engines: {node: '>=4'}
     hasBin: true
 
-  esrap@1.2.2:
-    resolution: {integrity: sha512-F2pSJklxx1BlQIQgooczXCPHmcWpn6EsP5oo73LQfonG9fIlIENQ8vMmfGXeojP9MrkzUNAfyU5vdFlR9shHAw==}
+  esrap@1.4.3:
+    resolution: {integrity: sha512-Xddc1RsoFJ4z9nR7W7BFaEPIp4UXoeQ0+077UdWLxbafMQFyU79sQJMk7kxNgRwQ9/aVgaKacCHC2pUACGwmYw==}
 
   esrecurse@4.3.0:
     resolution: {integrity: sha512-KmfKL3b6G+RXvP8N1vr3Tq1kL/oCFgn2NYXEtqP8/L3pKapUA4G8cFVaoF3SU323CD4XypR/ffioHmkti6/Tag==}
@@ -6678,8 +6714,8 @@ packages:
   hast-util-to-estree@3.1.0:
     resolution: {integrity: sha512-lfX5g6hqVh9kjS/B9E2gSkvHH4SZNiQFiqWS0x9fENzEl+8W12RqdRxX6d/Cwxi30tPQs3bIO+aolQJNp1bIyw==}
 
-  hast-util-to-html@9.0.3:
-    resolution: {integrity: sha512-M17uBDzMJ9RPCqLMO92gNNUDuBSq10a25SDBI08iCCxmorf4Yy6sYHK57n9WAbRAAaU+DuR4W6GN9K4DFZesYg==}
+  hast-util-to-html@9.0.4:
+    resolution: {integrity: sha512-wxQzXtdbhiwGAUKrnQJXlOPmHnEehzphwkK7aluUPQ+lEc1xefC8pblMgpp2w5ldBTEfveRIrADcrhGIWrlTDA==}
 
   hast-util-to-jsx-runtime@2.3.2:
     resolution: {integrity: sha512-1ngXYb+V9UT5h+PxNRa1O1FYguZK/XL+gkeqvp7EdHlB9oHUG0eYRo/vY5inBdcqo3RkPMC58/H94HvkbfGdyg==}
@@ -7058,8 +7094,8 @@ packages:
     resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
     engines: {node: '>=14'}
 
-  js-tiktoken@1.0.15:
-    resolution: {integrity: sha512-65ruOWWXDEZHHbAo7EjOcNxOGasQKbL4Fq3jEr2xsCqSsoOo6VVSqzWQb6PRIqypFSDcma4jO90YP0w5X8qVXQ==}
+  js-tiktoken@1.0.16:
+    resolution: {integrity: sha512-nUVdO5k/M9llWpiaZlBBDdtmr6qWXwSD6fgaDu2zM8UP+OXxx9V37lFkI6w0/1IuaDx7WffZ37oYd9KvcWKElg==}
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -7143,8 +7179,8 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
-  langsmith@0.2.7:
-    resolution: {integrity: sha512-9LFOp30cQ9K/7rzMt4USBI0SEKKhsH4l42ZERBPXOmDXnR5gYpsGFw8SZR0A6YLnc6vvoEmtr/XKel0Odq2UWw==}
+  langsmith@0.2.15:
+    resolution: {integrity: sha512-homtJU41iitqIZVuuLW7iarCzD4f39KcfP9RTBWav9jifhrsDa1Ez89Ejr+4qi72iuBu8Y5xykchsGVgiEZ93w==}
     peerDependencies:
       openai: '*'
     peerDependenciesMeta:
@@ -7217,6 +7253,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -7262,6 +7299,9 @@ packages:
 
   magic-string@0.30.12:
     resolution: {integrity: sha512-Ea8I3sQMVXr8JhN4z+H/d8zwo+tYDgHE9+5G4Wnrwhs0gaK9fXTKx0Tw5Xwsd/bCPTTZNRAdpyzvoeORe9LYpw==}
+
+  magic-string@0.30.17:
+    resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
 
   magic-string@0.30.8:
     resolution: {integrity: sha512-ISQTe55T2ao7XtlAStud6qwYPZjE4GK1S/BeVPus4jrq6JuOnQ00YKQC581RWhR122W7msZV263KzVeLoqidyQ==}
@@ -7441,6 +7481,9 @@ packages:
   micromark-util-character@2.1.0:
     resolution: {integrity: sha512-KvOVV+X1yLBfs9dCBSopq/+G1PcgT3lAK07mC4BzXi5E7ahzMAF8oIupDDJ6mievI6F+lAATkbQQlQixJfT3aQ==}
 
+  micromark-util-character@2.1.1:
+    resolution: {integrity: sha512-wv8tdUTJ3thSFFFJKtpYKOYiGP2+v96Hvk4Tu8KpCAsTMs6yi+nVmGh1syvSCsaxz45J6Jbw+9DD6g97+NV67Q==}
+
   micromark-util-chunked@2.0.0:
     resolution: {integrity: sha512-anK8SWmNphkXdaKgz5hJvGa7l00qmcaUQoMYsBwDlSKFKjc6gjGXPDw3FNL3Nbwq5L8gE+RCbGqTw49FK5Qyvg==}
 
@@ -7459,6 +7502,9 @@ packages:
   micromark-util-encode@2.0.0:
     resolution: {integrity: sha512-pS+ROfCXAGLWCOc8egcBvT0kf27GoWMqtdarNfDcjb6YLuV5cM3ioG45Ys2qOVqeqSbjaKg72vU+Wby3eddPsA==}
 
+  micromark-util-encode@2.0.1:
+    resolution: {integrity: sha512-c3cVx2y4KqUnwopcO9b/SCdo2O67LwJJ/UyqGfbigahfegL9myoEFoDYZgkT7f36T0bLrM9hZTAaAyH+PCAXjw==}
+
   micromark-util-events-to-acorn@2.0.2:
     resolution: {integrity: sha512-Fk+xmBrOv9QZnEDguL9OI9/NQQp6Hz4FuQ4YmCb/5V7+9eAh1s6AYSvL20kHkD67YIg7EpE54TiSlcsf3vyZgA==}
 
@@ -7474,14 +7520,23 @@ packages:
   micromark-util-sanitize-uri@2.0.0:
     resolution: {integrity: sha512-WhYv5UEcZrbAtlsnPuChHUAsu/iBPOVaEVsntLBIdpibO0ddy8OzavZz3iL2xVvBZOpolujSliP65Kq0/7KIYw==}
 
+  micromark-util-sanitize-uri@2.0.1:
+    resolution: {integrity: sha512-9N9IomZ/YuGGZZmQec1MbgxtlgougxTodVwDzzEouPKo3qFWvymFHWcnDi2vzV1ff6kas9ucW+o3yzJK9YB1AQ==}
+
   micromark-util-subtokenize@2.0.1:
     resolution: {integrity: sha512-jZNtiFl/1aY73yS3UGQkutD0UbhTt68qnRpw2Pifmz5wV9h8gOVsN70v+Lq/f1rKaU/W8pxRe8y8Q9FX1AOe1Q==}
 
   micromark-util-symbol@2.0.0:
     resolution: {integrity: sha512-8JZt9ElZ5kyTnO94muPxIGS8oyElRJaiJO8EzV6ZSyGQ1Is8xwl4Q45qU5UOg+bGH4AikWziz0iN4sFLWs8PGw==}
 
+  micromark-util-symbol@2.0.1:
+    resolution: {integrity: sha512-vs5t8Apaud9N28kgCrRUdEed4UJ+wWNvicHLPxCa9ENlYuAY31M0ETy5y1vA33YoNPDFTghEbnh6efaE8h4x0Q==}
+
   micromark-util-types@2.0.0:
     resolution: {integrity: sha512-oNh6S2WMHWRZrmutsRmDDfkzKtxF+bc2VxLC9dvtrDIRFln627VsFP6fLMgTryGDljgLPjkrzQSDcPrjPyDJ5w==}
+
+  micromark-util-types@2.0.1:
+    resolution: {integrity: sha512-534m2WhVTddrcKVepwmVEVnUAmtrx9bfIjNoQHRqfnvdaHQiFytEhJoTgpWJvDEXCO5gLTQh3wYC1PgOJA4NSQ==}
 
   micromark@4.0.0:
     resolution: {integrity: sha512-o/sd0nMof8kYff+TqcDx3VSrgBTcZpSvYcAHIfHhv5VAuNmisCxjhx6YmxS8PFEpb9z5WKWKPdzf0jM23ro3RQ==}
@@ -7583,6 +7638,11 @@ packages:
 
   nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
+  nanoid@3.3.8:
+    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -7786,11 +7846,11 @@ packages:
     resolution: {integrity: sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==}
     engines: {node: '>=6'}
 
-  oniguruma-to-es@0.4.1:
-    resolution: {integrity: sha512-rNcEohFz095QKGRovP/yqPIKc+nP+Sjs4YTHMv33nMePGKrq/r2eu9Yh4646M5XluGJsUnmwoXuiXE69KDs+fQ==}
-
   oniguruma-to-es@0.7.0:
     resolution: {integrity: sha512-HRaRh09cE0gRS3+wi2zxekB+I5L8C/gN60S+vb11eADHUaB/q4u8wGGOX3GvwvitG8ixaeycZfeoyruKQzUgNg==}
+
+  oniguruma-to-es@2.3.0:
+    resolution: {integrity: sha512-bwALDxriqfKGfUufKGGepCzu9x7nJQuoRoAFp4AnwehhC2crqrDIAP/uN2qdlsAvSMpeRC3+Yzhqc7hLmle5+g==}
 
   open@8.4.2:
     resolution: {integrity: sha512-7x81NCL719oNbsq/3mh+hVrAWmFuEYUqrq/Iw3kUzH8ReypT9QQ0BLoJS7/G9k6N81XjW4qHWtjWwe/9eLy1EQ==}
@@ -8156,6 +8216,10 @@ packages:
     resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postcss@8.5.1:
+    resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
+    engines: {node: ^10 || ^12 || >=14}
+
   postgres-array@2.0.0:
     resolution: {integrity: sha512-VpZrUqU5A69eQyW2c5CA1jtLecCsN2U/bD6VilrFDWq5+5UIEVO7nazS3TEcHf1zuPYO/sqGvUvW62g86RXZuA==}
     engines: {node: '>=4'}
@@ -8486,17 +8550,17 @@ packages:
   regex-parser@2.3.0:
     resolution: {integrity: sha512-TVILVSz2jY5D47F4mA4MppkBrafEaiUWJO/TcZHEIuI13AqoZMkK1WMA4Om1YkYbTx+9Ki1/tSUXbceyr9saRg==}
 
-  regex-recursion@4.2.1:
-    resolution: {integrity: sha512-QHNZyZAeKdndD1G3bKAbBEKOSSK4KOHQrAJ01N1LJeb0SoH4DJIeFhp0uUpETgONifS4+P3sOgoA1dhzgrQvhA==}
-
   regex-recursion@4.3.0:
     resolution: {integrity: sha512-5LcLnizwjcQ2ALfOj95MjcatxyqF5RPySx9yT+PaXu3Gox2vyAtLDjHB8NTJLtMGkvyau6nI3CfpwFCjPUIs/A==}
+
+  regex-recursion@5.1.1:
+    resolution: {integrity: sha512-ae7SBCbzVNrIjgSbh7wMznPcQel1DNlDtzensnFxpiNpXt1U2ju/bHugH422r+4LAVS1FpW1YCwilmnNsjum9w==}
 
   regex-utilities@2.3.0:
     resolution: {integrity: sha512-8VhliFJAWRaUiVvREIiW2NXXTmHs4vMNnSzuJVhscgmGav3g9VDxLrQndI3dZZVVdp0ZO/5v0xmX516/7M9cng==}
 
-  regex@5.0.2:
-    resolution: {integrity: sha512-/pczGbKIQgfTMRV0XjABvc5RzLqQmwqxLHdQao2RTXPk+pmTXB2P0IaUHYdYyk412YLwUIkaeMd5T+RzVgTqnQ==}
+  regex@5.1.1:
+    resolution: {integrity: sha512-dN5I359AVGPnwzJm2jN1k0W9LPZ+ePvoOeVMMfqIMFz53sSwXkxaJoxr50ptnsC771lK95BnTrVSZxq0b9yCGw==}
 
   regexp.prototype.flags@1.5.2:
     resolution: {integrity: sha512-NcDiDkTLuPR+++OCKB0nWafEmhg/Da8aUPLPMQbK+bxKKCm1/S5he+AqYa4PlMCVBalb4/yxIRub6qkEx5yJbw==}
@@ -8737,6 +8801,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.0:
+    resolution: {integrity: sha512-DrfFnPzblFmNrIZzg5RzHegbiRWg7KMR7btwi2yjHwx06zsUbO5g613sVwEV7FTwmzJu+Io0lJe2GJ3LxqpvBQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   serialize-javascript@6.0.2:
     resolution: {integrity: sha512-Saa1xPByTTq2gdeFZYLLo+RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6uIvEqJRd46jemmyA4iFIeVk8g==}
 
@@ -8788,11 +8857,14 @@ packages:
   shell-quote@1.8.1:
     resolution: {integrity: sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==}
 
-  shiki@1.23.1:
-    resolution: {integrity: sha512-8kxV9TH4pXgdKGxNOkrSMydn1Xf6It8lsle0fiqxf7a1149K1WGtdOu3Zb91T5r1JpvRPxqxU3C2XdZZXQnrig==}
-
   shiki@1.24.0:
     resolution: {integrity: sha512-qIneep7QRwxRd5oiHb8jaRzH15V/S8F3saCXOdjwRLgozZJr5x2yeBhQtqkO3FSzQDwYEFAYuifg4oHjpDghrg==}
+
+  shiki@1.29.2:
+    resolution: {integrity: sha512-njXuliz/cP+67jU2hukkxCNuH1yUi4QfdZZY+sMr5PPrIyXSu5iTb/qYC4BiWWB0vZ+7TbdvYUCeL23zpwCfbg==}
+
+  shiki@2.2.0:
+    resolution: {integrity: sha512-3uoZBmc+zpd2JOEeTvKP/vK5UVDDe8YiigkT9flq+MV5Z1MKFiUXfbLIvHfqcJ+V90StDiP1ckN97z1WlhC6cQ==}
 
   shimmer@1.2.1:
     resolution: {integrity: sha512-sQTKC1Re/rM6XyFM6fIAGHRPVGvyXfgzIDvzoq608vM+jeyVD0Tu1E6Np0Kc2zAIFWIj963V2800iF/9LPieQw==}
@@ -9885,8 +9957,16 @@ packages:
     peerDependencies:
       zod: ^3.23.3
 
+  zod-to-json-schema@3.24.1:
+    resolution: {integrity: sha512-3h08nf3Vw3Wl3PK+q3ow/lIil81IT2Oa7YpQyUUDsEWbXveMesdfK1xBd2RhCkynwZndAxixji/7SYJJowr62w==}
+    peerDependencies:
+      zod: ^3.24.1
+
   zod@3.23.8:
     resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+
+  zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -9895,42 +9975,42 @@ snapshots:
 
   '@adobe/css-tools@4.4.1': {}
 
-  '@ai-sdk/openai@1.0.4(zod@3.23.8)':
+  '@ai-sdk/openai@1.0.4(zod@3.24.1)':
     dependencies:
       '@ai-sdk/provider': 1.0.1
-      '@ai-sdk/provider-utils': 2.0.2(zod@3.23.8)
-      zod: 3.23.8
+      '@ai-sdk/provider-utils': 2.0.2(zod@3.24.1)
+      zod: 3.24.1
 
-  '@ai-sdk/provider-utils@2.0.2(zod@3.23.8)':
+  '@ai-sdk/provider-utils@2.0.2(zod@3.24.1)':
     dependencies:
       '@ai-sdk/provider': 1.0.1
       eventsource-parser: 3.0.0
       nanoid: 3.3.7
       secure-json-parse: 2.7.0
     optionalDependencies:
-      zod: 3.23.8
+      zod: 3.24.1
 
   '@ai-sdk/provider@1.0.1':
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/react@1.0.3(react@18.3.1)(zod@3.23.8)':
+  '@ai-sdk/react@1.0.3(react@18.3.1)(zod@3.24.1)':
     dependencies:
-      '@ai-sdk/provider-utils': 2.0.2(zod@3.23.8)
-      '@ai-sdk/ui-utils': 1.0.2(zod@3.23.8)
+      '@ai-sdk/provider-utils': 2.0.2(zod@3.24.1)
+      '@ai-sdk/ui-utils': 1.0.2(zod@3.24.1)
       swr: 2.2.5(react@18.3.1)
       throttleit: 2.1.0
     optionalDependencies:
       react: 18.3.1
-      zod: 3.23.8
+      zod: 3.24.1
 
-  '@ai-sdk/ui-utils@1.0.2(zod@3.23.8)':
+  '@ai-sdk/ui-utils@1.0.2(zod@3.24.1)':
     dependencies:
       '@ai-sdk/provider': 1.0.1
-      '@ai-sdk/provider-utils': 2.0.2(zod@3.23.8)
-      zod-to-json-schema: 3.23.5(zod@3.23.8)
+      '@ai-sdk/provider-utils': 2.0.2(zod@3.24.1)
+      zod-to-json-schema: 3.23.5(zod@3.24.1)
     optionalDependencies:
-      zod: 3.23.8
+      zod: 3.24.1
 
   '@algolia/cache-browser-local-storage@4.24.0':
     dependencies:
@@ -10434,6 +10514,11 @@ snapshots:
   '@babel/parser@7.26.2':
     dependencies:
       '@babel/types': 7.26.0
+
+  '@babel/parser@7.26.7':
+    dependencies:
+      '@babel/types': 7.26.7
+    optional: true
 
   '@babel/plugin-bugfix-firefox-class-in-computed-class-key@7.25.9(@babel/core@7.26.0)':
     dependencies:
@@ -11054,6 +11139,12 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
+  '@babel/types@7.26.7':
+    dependencies:
+      '@babel/helper-string-parser': 7.25.9
+      '@babel/helper-validator-identifier': 7.25.9
+    optional: true
+
   '@behold/sharp-vibrant@0.2.1':
     dependencies:
       '@types/node': 20.17.0
@@ -11591,14 +11682,14 @@ snapshots:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
-      js-tiktoken: 1.0.15
-      langsmith: 0.2.7
+      js-tiktoken: 1.0.16
+      langsmith: 0.2.15
       mustache: 4.2.0
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 10.0.0
-      zod: 3.23.8
-      zod-to-json-schema: 3.23.5(zod@3.23.8)
+      zod: 3.24.1
+      zod-to-json-schema: 3.24.1(zod@3.24.1)
     transitivePeerDependencies:
       - openai
 
@@ -13404,45 +13495,73 @@ snapshots:
       - encoding
       - supports-color
 
-  '@shikijs/core@1.23.1':
-    dependencies:
-      '@shikijs/engine-javascript': 1.23.1
-      '@shikijs/engine-oniguruma': 1.23.1
-      '@shikijs/types': 1.23.1
-      '@shikijs/vscode-textmate': 9.3.0
-      '@types/hast': 3.0.4
-      hast-util-to-html: 9.0.3
-
   '@shikijs/core@1.24.0':
     dependencies:
       '@shikijs/engine-javascript': 1.24.0
       '@shikijs/engine-oniguruma': 1.24.0
       '@shikijs/types': 1.24.0
-      '@shikijs/vscode-textmate': 9.3.0
+      '@shikijs/vscode-textmate': 9.3.1
       '@types/hast': 3.0.4
-      hast-util-to-html: 9.0.3
+      hast-util-to-html: 9.0.4
 
-  '@shikijs/engine-javascript@1.23.1':
+  '@shikijs/core@1.29.2':
     dependencies:
-      '@shikijs/types': 1.23.1
-      '@shikijs/vscode-textmate': 9.3.0
-      oniguruma-to-es: 0.4.1
+      '@shikijs/engine-javascript': 1.29.2
+      '@shikijs/engine-oniguruma': 1.29.2
+      '@shikijs/types': 1.29.2
+      '@shikijs/vscode-textmate': 10.0.1
+      '@types/hast': 3.0.4
+      hast-util-to-html: 9.0.4
+
+  '@shikijs/core@2.2.0':
+    dependencies:
+      '@shikijs/engine-javascript': 2.2.0
+      '@shikijs/engine-oniguruma': 2.2.0
+      '@shikijs/types': 2.2.0
+      '@shikijs/vscode-textmate': 10.0.1
+      '@types/hast': 3.0.4
+      hast-util-to-html: 9.0.4
 
   '@shikijs/engine-javascript@1.24.0':
     dependencies:
       '@shikijs/types': 1.24.0
-      '@shikijs/vscode-textmate': 9.3.0
+      '@shikijs/vscode-textmate': 9.3.1
       oniguruma-to-es: 0.7.0
 
-  '@shikijs/engine-oniguruma@1.23.1':
+  '@shikijs/engine-javascript@1.29.2':
     dependencies:
-      '@shikijs/types': 1.23.1
-      '@shikijs/vscode-textmate': 9.3.0
+      '@shikijs/types': 1.29.2
+      '@shikijs/vscode-textmate': 10.0.1
+      oniguruma-to-es: 2.3.0
+
+  '@shikijs/engine-javascript@2.2.0':
+    dependencies:
+      '@shikijs/types': 2.2.0
+      '@shikijs/vscode-textmate': 10.0.1
+      oniguruma-to-es: 2.3.0
 
   '@shikijs/engine-oniguruma@1.24.0':
     dependencies:
       '@shikijs/types': 1.24.0
-      '@shikijs/vscode-textmate': 9.3.0
+      '@shikijs/vscode-textmate': 9.3.1
+
+  '@shikijs/engine-oniguruma@1.29.2':
+    dependencies:
+      '@shikijs/types': 1.29.2
+      '@shikijs/vscode-textmate': 10.0.1
+
+  '@shikijs/engine-oniguruma@2.2.0':
+    dependencies:
+      '@shikijs/types': 2.2.0
+      '@shikijs/vscode-textmate': 10.0.1
+
+  '@shikijs/langs@1.29.2':
+    dependencies:
+      '@shikijs/types': 1.29.2
+
+  '@shikijs/langs@2.2.0':
+    dependencies:
+      '@shikijs/types': 2.2.0
 
   '@shikijs/rehype@1.24.0':
     dependencies:
@@ -13453,17 +13572,32 @@ snapshots:
       unified: 11.0.5
       unist-util-visit: 5.0.0
 
-  '@shikijs/types@1.23.1':
+  '@shikijs/themes@1.29.2':
     dependencies:
-      '@shikijs/vscode-textmate': 9.3.0
-      '@types/hast': 3.0.4
+      '@shikijs/types': 1.29.2
+
+  '@shikijs/themes@2.2.0':
+    dependencies:
+      '@shikijs/types': 2.2.0
 
   '@shikijs/types@1.24.0':
     dependencies:
-      '@shikijs/vscode-textmate': 9.3.0
+      '@shikijs/vscode-textmate': 9.3.1
       '@types/hast': 3.0.4
 
-  '@shikijs/vscode-textmate@9.3.0': {}
+  '@shikijs/types@1.29.2':
+    dependencies:
+      '@shikijs/vscode-textmate': 10.0.1
+      '@types/hast': 3.0.4
+
+  '@shikijs/types@2.2.0':
+    dependencies:
+      '@shikijs/vscode-textmate': 10.0.1
+      '@types/hast': 3.0.4
+
+  '@shikijs/vscode-textmate@10.0.1': {}
+
+  '@shikijs/vscode-textmate@9.3.1': {}
 
   '@socket.io/component-emitter@3.1.2': {}
 
@@ -13850,10 +13984,10 @@ snapshots:
     dependencies:
       storybook: 8.4.5(bufferutil@4.0.8)
 
-  '@stripe/agent-toolkit@0.1.21(@langchain/core@0.3.18)(ai@4.0.9(react@18.3.1)(zod@3.23.8))':
+  '@stripe/agent-toolkit@0.1.21(@langchain/core@0.3.18)(ai@4.0.9(react@18.3.1)(zod@3.24.1))':
     dependencies:
       '@langchain/core': 0.3.18
-      ai: 4.0.9(react@18.3.1)(zod@3.23.8)
+      ai: 4.0.9(react@18.3.1)(zod@3.24.1)
       stripe: 17.4.0
       zod: 3.23.8
 
@@ -13892,7 +14026,7 @@ snapshots:
   '@swc/core@1.3.101(@swc/helpers@0.5.13)':
     dependencies:
       '@swc/counter': 0.1.3
-      '@swc/types': 0.1.7
+      '@swc/types': 0.1.17
     optionalDependencies:
       '@swc/core-darwin-arm64': 1.3.101
       '@swc/core-darwin-x64': 1.3.101
@@ -13918,7 +14052,7 @@ snapshots:
       '@swc/counter': 0.1.3
       tslib: 2.8.0
 
-  '@swc/types@0.1.7':
+  '@swc/types@0.1.17':
     dependencies:
       '@swc/counter': 0.1.3
     optional: true
@@ -14217,7 +14351,7 @@ snapshots:
 
   '@types/text-table@0.2.5': {}
 
-  '@types/unist@2.0.10': {}
+  '@types/unist@2.0.11': {}
 
   '@types/unist@3.0.3': {}
 
@@ -14229,7 +14363,7 @@ snapshots:
     dependencies:
       '@types/node': 22.9.4
 
-  '@ungap/structured-clone@1.2.0': {}
+  '@ungap/structured-clone@1.3.0': {}
 
   '@vercel/analytics@1.4.1(next@15.0.3(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(svelte@5.2.7)(vue@3.5.13(typescript@5.7.2))':
     optionalDependencies:
@@ -14343,7 +14477,7 @@ snapshots:
 
   '@vue/compiler-core@3.5.13':
     dependencies:
-      '@babel/parser': 7.26.2
+      '@babel/parser': 7.26.7
       '@vue/shared': 3.5.13
       entities: 4.5.0
       estree-walker: 2.0.2
@@ -14358,14 +14492,14 @@ snapshots:
 
   '@vue/compiler-sfc@3.5.13':
     dependencies:
-      '@babel/parser': 7.26.2
+      '@babel/parser': 7.26.7
       '@vue/compiler-core': 3.5.13
       '@vue/compiler-dom': 3.5.13
       '@vue/compiler-ssr': 3.5.13
       '@vue/shared': 3.5.13
       estree-walker: 2.0.2
-      magic-string: 0.30.12
-      postcss: 8.4.49
+      magic-string: 0.30.17
+      postcss: 8.5.1
       source-map-js: 1.2.1
     optional: true
 
@@ -14537,18 +14671,18 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ai@4.0.9(react@18.3.1)(zod@3.23.8):
+  ai@4.0.9(react@18.3.1)(zod@3.24.1):
     dependencies:
       '@ai-sdk/provider': 1.0.1
-      '@ai-sdk/provider-utils': 2.0.2(zod@3.23.8)
-      '@ai-sdk/react': 1.0.3(react@18.3.1)(zod@3.23.8)
-      '@ai-sdk/ui-utils': 1.0.2(zod@3.23.8)
+      '@ai-sdk/provider-utils': 2.0.2(zod@3.24.1)
+      '@ai-sdk/react': 1.0.3(react@18.3.1)(zod@3.24.1)
+      '@ai-sdk/ui-utils': 1.0.2(zod@3.24.1)
       '@opentelemetry/api': 1.9.0
       jsondiffpatch: 0.6.0
-      zod-to-json-schema: 3.23.5(zod@3.23.8)
+      zod-to-json-schema: 3.23.5(zod@3.24.1)
     optionalDependencies:
       react: 18.3.1
-      zod: 3.23.8
+      zod: 3.24.1
 
   ajv-formats@2.1.1(ajv@8.17.1):
     optionalDependencies:
@@ -15856,15 +15990,14 @@ snapshots:
       esrecurse: 4.3.0
       estraverse: 4.3.0
 
-  esm-env@1.1.4:
+  esm-env@1.2.2:
     optional: true
 
   esprima@4.0.1: {}
 
-  esrap@1.2.2:
+  esrap@1.4.3:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
-      '@types/estree': 1.0.6
     optional: true
 
   esrecurse@4.3.0:
@@ -16162,7 +16295,7 @@ snapshots:
       remark: 15.0.1
       remark-gfm: 4.0.0
       scroll-into-view-if-needed: 3.1.0
-      shiki: 1.24.0
+      shiki: 1.29.2
       unist-util-visit: 5.0.0
     optionalDependencies:
       algoliasearch: 4.24.0
@@ -16353,7 +16486,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  hast-util-to-html@9.0.3:
+  hast-util-to-html@9.0.4:
     dependencies:
       '@types/hast': 3.0.4
       '@types/unist': 3.0.3
@@ -16764,7 +16897,7 @@ snapshots:
 
   js-cookie@3.0.5: {}
 
-  js-tiktoken@1.0.15:
+  js-tiktoken@1.0.16:
     dependencies:
       base64-js: 1.5.1
 
@@ -16860,13 +16993,13 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  langsmith@0.2.7:
+  langsmith@0.2.15:
     dependencies:
       '@types/uuid': 10.0.0
       commander: 10.0.1
       p-queue: 6.6.2
       p-retry: 4.6.2
-      semver: 7.6.3
+      semver: 7.7.0
       uuid: 10.0.0
 
   leac@0.6.0: {}
@@ -16964,6 +17097,11 @@ snapshots:
   magic-string@0.30.12:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  magic-string@0.30.17:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.5.0
+    optional: true
 
   magic-string@0.30.8:
     dependencies:
@@ -17147,9 +17285,9 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
-      '@ungap/structured-clone': 1.2.0
+      '@ungap/structured-clone': 1.3.0
       devlop: 1.1.0
-      micromark-util-sanitize-uri: 2.0.0
+      micromark-util-sanitize-uri: 2.0.1
       trim-lines: 3.0.1
       unist-util-position: 5.0.0
       unist-util-visit: 5.0.0
@@ -17354,10 +17492,10 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.6
       devlop: 1.1.0
-      micromark-util-character: 2.1.0
+      micromark-util-character: 2.1.1
       micromark-util-events-to-acorn: 2.0.2
-      micromark-util-symbol: 2.0.0
-      micromark-util-types: 2.0.0
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.1
       unist-util-position-from-estree: 2.0.0
       vfile-message: 4.0.2
 
@@ -17384,6 +17522,11 @@ snapshots:
     dependencies:
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
+
+  micromark-util-character@2.1.1:
+    dependencies:
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.1
 
   micromark-util-chunked@2.0.0:
     dependencies:
@@ -17413,6 +17556,8 @@ snapshots:
 
   micromark-util-encode@2.0.0: {}
 
+  micromark-util-encode@2.0.1: {}
+
   micromark-util-events-to-acorn@2.0.2:
     dependencies:
       '@types/acorn': 4.0.6
@@ -17420,8 +17565,8 @@ snapshots:
       '@types/unist': 3.0.3
       devlop: 1.1.0
       estree-util-visit: 2.0.0
-      micromark-util-symbol: 2.0.0
-      micromark-util-types: 2.0.0
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.1
       vfile-message: 4.0.2
 
   micromark-util-html-tag-name@2.0.0: {}
@@ -17440,6 +17585,12 @@ snapshots:
       micromark-util-encode: 2.0.0
       micromark-util-symbol: 2.0.0
 
+  micromark-util-sanitize-uri@2.0.1:
+    dependencies:
+      micromark-util-character: 2.1.1
+      micromark-util-encode: 2.0.1
+      micromark-util-symbol: 2.0.1
+
   micromark-util-subtokenize@2.0.1:
     dependencies:
       devlop: 1.1.0
@@ -17449,7 +17600,11 @@ snapshots:
 
   micromark-util-symbol@2.0.0: {}
 
+  micromark-util-symbol@2.0.1: {}
+
   micromark-util-types@2.0.0: {}
+
+  micromark-util-types@2.0.1: {}
 
   micromark@4.0.0:
     dependencies:
@@ -17547,6 +17702,9 @@ snapshots:
 
   nanoid@3.3.7: {}
 
+  nanoid@3.3.8:
+    optional: true
+
   napi-build-utils@1.0.2: {}
 
   negotiator@0.6.3: {}
@@ -17596,7 +17754,7 @@ snapshots:
       '@swc/counter': 0.1.3
       '@swc/helpers': 0.5.13
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001655
+      caniuse-lite: 1.0.30001676
       postcss: 8.4.31
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -17754,17 +17912,17 @@ snapshots:
     dependencies:
       mimic-fn: 2.1.0
 
-  oniguruma-to-es@0.4.1:
-    dependencies:
-      emoji-regex-xs: 1.0.0
-      regex: 5.0.2
-      regex-recursion: 4.2.1
-
   oniguruma-to-es@0.7.0:
     dependencies:
       emoji-regex-xs: 1.0.0
-      regex: 5.0.2
+      regex: 5.1.1
       regex-recursion: 4.3.0
+
+  oniguruma-to-es@2.3.0:
+    dependencies:
+      emoji-regex-xs: 1.0.0
+      regex: 5.1.1
+      regex-recursion: 5.1.1
 
   open@8.4.2:
     dependencies:
@@ -17878,7 +18036,7 @@ snapshots:
 
   parse-entities@4.0.1:
     dependencies:
-      '@types/unist': 2.0.10
+      '@types/unist': 2.0.11
       character-entities: 2.0.2
       character-entities-legacy: 3.0.0
       character-reference-invalid: 2.0.1
@@ -18124,6 +18282,13 @@ snapshots:
       nanoid: 3.3.7
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  postcss@8.5.1:
+    dependencies:
+      nanoid: 3.3.8
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+    optional: true
 
   postgres-array@2.0.0: {}
 
@@ -18542,17 +18707,18 @@ snapshots:
 
   regex-parser@2.3.0: {}
 
-  regex-recursion@4.2.1:
-    dependencies:
-      regex-utilities: 2.3.0
-
   regex-recursion@4.3.0:
     dependencies:
       regex-utilities: 2.3.0
 
+  regex-recursion@5.1.1:
+    dependencies:
+      regex: 5.1.1
+      regex-utilities: 2.3.0
+
   regex-utilities@2.3.0: {}
 
-  regex@5.0.2:
+  regex@5.1.1:
     dependencies:
       regex-utilities: 2.3.0
 
@@ -18868,6 +19034,8 @@ snapshots:
 
   semver@7.6.3: {}
 
+  semver@7.7.0: {}
+
   serialize-javascript@6.0.2:
     dependencies:
       randombytes: 2.1.0
@@ -18950,22 +19118,35 @@ snapshots:
 
   shell-quote@1.8.1: {}
 
-  shiki@1.23.1:
-    dependencies:
-      '@shikijs/core': 1.23.1
-      '@shikijs/engine-javascript': 1.23.1
-      '@shikijs/engine-oniguruma': 1.23.1
-      '@shikijs/types': 1.23.1
-      '@shikijs/vscode-textmate': 9.3.0
-      '@types/hast': 3.0.4
-
   shiki@1.24.0:
     dependencies:
       '@shikijs/core': 1.24.0
       '@shikijs/engine-javascript': 1.24.0
       '@shikijs/engine-oniguruma': 1.24.0
       '@shikijs/types': 1.24.0
-      '@shikijs/vscode-textmate': 9.3.0
+      '@shikijs/vscode-textmate': 9.3.1
+      '@types/hast': 3.0.4
+
+  shiki@1.29.2:
+    dependencies:
+      '@shikijs/core': 1.29.2
+      '@shikijs/engine-javascript': 1.29.2
+      '@shikijs/engine-oniguruma': 1.29.2
+      '@shikijs/langs': 1.29.2
+      '@shikijs/themes': 1.29.2
+      '@shikijs/types': 1.29.2
+      '@shikijs/vscode-textmate': 10.0.1
+      '@types/hast': 3.0.4
+
+  shiki@2.2.0:
+    dependencies:
+      '@shikijs/core': 2.2.0
+      '@shikijs/engine-javascript': 2.2.0
+      '@shikijs/engine-oniguruma': 2.2.0
+      '@shikijs/langs': 2.2.0
+      '@shikijs/themes': 2.2.0
+      '@shikijs/types': 2.2.0
+      '@shikijs/vscode-textmate': 10.0.1
       '@types/hast': 3.0.4
 
   shimmer@1.2.1: {}
@@ -19316,11 +19497,11 @@ snapshots:
       acorn-typescript: 1.4.13(acorn@8.14.0)
       aria-query: 5.3.2
       axobject-query: 4.1.0
-      esm-env: 1.1.4
-      esrap: 1.2.2
+      esm-env: 1.2.2
+      esrap: 1.4.3
       is-reference: 3.0.3
       locate-character: 3.0.0
-      magic-string: 0.30.12
+      magic-string: 0.30.17
       zimmerframe: 1.1.2
     optional: true
 
@@ -20288,10 +20469,16 @@ snapshots:
   zimmerframe@1.1.2:
     optional: true
 
-  zod-to-json-schema@3.23.5(zod@3.23.8):
+  zod-to-json-schema@3.23.5(zod@3.24.1):
     dependencies:
-      zod: 3.23.8
+      zod: 3.24.1
+
+  zod-to-json-schema@3.24.1(zod@3.24.1):
+    dependencies:
+      zod: 3.24.1
 
   zod@3.23.8: {}
+
+  zod@3.24.1: {}
 
   zwitch@2.0.4: {}
